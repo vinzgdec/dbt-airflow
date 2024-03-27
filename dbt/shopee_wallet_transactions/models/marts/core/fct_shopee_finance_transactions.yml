@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+    - name: fact_shopee_finance_transactions
+      database: "{{ 'PROD_DB' if target.name == 'prod' else 'DEV_DB' }}"
+      schema: "{{ 'PROD_INTEG_SPE_SCHdsd' if target.name == 'prod' else 'DEV_INTEG_SPE_SCH' }}"
+      freshness: # default freshness
+        warn_after: {count: 15, period: hour}
+        error_after: {count: 24, period: hour}
+      loaded_at_field: CRT_TIME
+      tables:
+          - name: fct_shopee_finance_transactions
+            description: records per transaction type.

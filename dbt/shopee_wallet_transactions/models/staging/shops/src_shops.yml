@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+    - name: shops
+      description: Market place account for all platforms
+      database: "{{ 'PROD_DB' if target.name == 'prod' else 'DEV_DB' }}"
+      schema: "{{ 'PROD_RAW_SPE_SCHdsd' if target.name == 'prod' else 'DEV_INTEG_MANUAL_SCH' }}"
+      tables:
+          - name: MKTP_ACCT_DT_V2
+            description: records per shops

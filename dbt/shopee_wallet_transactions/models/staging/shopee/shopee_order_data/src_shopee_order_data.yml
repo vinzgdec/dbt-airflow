@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+    - name: shopee_order_data
+      database: "{{ 'PROD_DB' if target.name == 'prod' else 'DEV_DB' }}"
+      schema: "{{ 'PROD_RAW_SPE_SCHdsd' if target.name == 'prod' else 'DEV_RAW_SPE_SCH' }}"
+      tables:
+          - name: SHOPEE_ORDER_DATA
+            description: 

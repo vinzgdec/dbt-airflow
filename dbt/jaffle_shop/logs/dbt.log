@@ -1,0 +1,583 @@
+[0m17:54:48.350260 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A82E26AE10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A82E2693D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A82E26A510>]}
+
+
+============================== 17:54:48.351002 | f7ca7750-b843-4249-815b-14fc1552791e ==============================
+[0m17:54:48.351002 [info ] [MainThread]: Running with dbt=1.7.10
+[0m17:54:48.351002 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\User\\Desktop\\cosmos-demo\\cosmos-demo\\dbt\\jaffle_shop', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'C:\\Users\\User\\Desktop\\cosmos-demo\\cosmos-demo\\dbt\\jaffle_shop\\logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt docs serve --port 8081', 'send_anonymous_usage_stats': 'True'}
+[0m17:54:48.361255 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Could not find profile named 'jaffle_shop'
+[0m17:54:48.361255 [debug] [MainThread]: Command `dbt docs serve` failed at 17:54:48.361255 after 0.12 seconds
+[0m17:54:48.361255 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A82E0B87D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A82E160B30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A82E096630>]}
+[0m17:54:48.361255 [debug] [MainThread]: Flushing usage events
+[0m17:58:17.078050 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C7D7C28C20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C7D7C2ADE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C7D7C28800>]}
+
+
+============================== 17:58:17.083389 | c402d086-622c-4328-b6e6-42d61cd7f85e ==============================
+[0m17:58:17.083389 [info ] [MainThread]: Running with dbt=1.7.10
+[0m17:58:17.087784 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\User\\Desktop\\cosmos-demo\\cosmos-demo\\dbt\\jaffle_shop\\logs', 'profiles_dir': 'C:\\Users\\User\\Desktop\\cosmos-demo\\cosmos-demo\\dbt\\jaffle_shop', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m17:58:17.089299 [info ] [MainThread]: dbt version: 1.7.10
+[0m17:58:17.089299 [info ] [MainThread]: python version: 3.12.2
+[0m17:58:17.089299 [info ] [MainThread]: python path: C:\Users\User\Desktop\cosmos-demo\cosmos-demo\dbt\dbt-env\Scripts\python.exe
+[0m17:58:17.096142 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m17:58:17.106566 [info ] [MainThread]: Using profiles dir at C:\Users\User\Desktop\cosmos-demo\cosmos-demo\dbt\jaffle_shop
+[0m17:58:17.109568 [info ] [MainThread]: Using profiles.yml file at C:\Users\User\Desktop\cosmos-demo\cosmos-demo\dbt\jaffle_shop\profiles.yml
+[0m17:58:17.111610 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\User\Desktop\cosmos-demo\cosmos-demo\dbt\jaffle_shop\dbt_project.yml
+[0m17:58:17.279136 [info ] [MainThread]: Configuration:
+[0m17:58:17.281096 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m17:58:17.282375 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m17:58:17.283339 [info ] [MainThread]: Required dependencies:
+[0m17:58:17.285089 [debug] [MainThread]: Executing "git --help"
+[0m17:58:17.318938 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m17:58:17.320023 [debug] [MainThread]: STDERR: "b''"
+[0m17:58:17.321535 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m17:58:17.322437 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m17:58:17.324438 [info ] [MainThread]: [31m1 check failed:[0m
+[0m17:58:17.325441 [info ] [MainThread]: Profile loading failed for the following reason:
+Runtime Error
+  Could not find profile named 'jaffle_shop'
+
+
+[0m17:58:17.328439 [debug] [MainThread]: Command `dbt debug` failed at 17:58:17.327966 after 0.47 seconds
+[0m17:58:17.329937 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C7D7AC6540>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C7D77E2C90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C7D7AF2E40>]}
+[0m17:58:17.331938 [debug] [MainThread]: Flushing usage events
+[0m18:05:33.910277 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F7EB8B94C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F7E55F6540>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F7EB8B9B80>]}
+
+
+============================== 18:05:33.918339 | fac46abf-bddc-4838-b438-9b6960fac04b ==============================
+[0m18:05:33.918339 [info ] [MainThread]: Running with dbt=1.7.10
+[0m18:05:33.920488 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\User\\Desktop\\cosmos-demo\\cosmos-demo\\dbt\\jaffle_shop', 'log_path': 'C:\\Users\\User\\Desktop\\cosmos-demo\\cosmos-demo\\dbt\\jaffle_shop\\logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt docs generate', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m18:05:33.926878 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Could not find profile named 'jaffle_shop'
+[0m18:05:33.931270 [debug] [MainThread]: Command `dbt docs generate` failed at 18:05:33.930733 after 0.23 seconds
+[0m18:05:33.932463 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F7EB781B20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F7EB70FA70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F7EB6A15B0>]}
+[0m18:05:33.933663 [debug] [MainThread]: Flushing usage events
+[0m18:28:48.313709 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B668D991F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B668D983E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B668D986B0>]}
+
+
+============================== 18:28:48.320613 | 06210780-cd16-4a30-8dd2-c688a148f5d5 ==============================
+[0m18:28:48.320613 [info ] [MainThread]: Running with dbt=1.7.10
+[0m18:28:48.324230 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\User\\Desktop\\cosmos-demo\\cosmos-demo\\dbt\\jaffle_shop', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'C:\\Users\\User\\Desktop\\cosmos-demo\\cosmos-demo\\dbt\\jaffle_shop\\logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m18:28:48.325205 [info ] [MainThread]: dbt version: 1.7.10
+[0m18:28:48.327076 [info ] [MainThread]: python version: 3.12.2
+[0m18:28:48.327423 [info ] [MainThread]: python path: C:\Users\User\Desktop\cosmos-demo\cosmos-demo\dbt\dbt-env\Scripts\python.exe
+[0m18:28:48.327423 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m18:28:48.947250 [info ] [MainThread]: Using profiles dir at C:\Users\User\Desktop\cosmos-demo\cosmos-demo\dbt\jaffle_shop
+[0m18:28:48.952969 [info ] [MainThread]: Using profiles.yml file at C:\Users\User\Desktop\cosmos-demo\cosmos-demo\dbt\jaffle_shop\profiles.yml
+[0m18:28:48.954249 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\User\Desktop\cosmos-demo\cosmos-demo\dbt\jaffle_shop\dbt_project.yml
+[0m18:28:48.954249 [info ] [MainThread]: adapter type: snowflake
+[0m18:28:48.954249 [info ] [MainThread]: adapter version: 1.7.2
+[0m18:28:49.080681 [info ] [MainThread]: Configuration:
+[0m18:28:49.080681 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m18:28:49.080681 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m18:28:49.080681 [info ] [MainThread]: Required dependencies:
+[0m18:28:49.080681 [debug] [MainThread]: Executing "git --help"
+[0m18:28:49.111393 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m18:28:49.111393 [debug] [MainThread]: STDERR: "b''"
+[0m18:28:49.111393 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m18:28:49.116543 [info ] [MainThread]: Connection:
+[0m18:28:49.116543 [info ] [MainThread]:   account: jf67392.europe-west4.gcp
+[0m18:28:49.116543 [info ] [MainThread]:   user: dbt_user
+[0m18:28:49.119073 [info ] [MainThread]:   database: dbt_hol_dev
+[0m18:28:49.121307 [info ] [MainThread]:   warehouse: dbt_dev_wh
+[0m18:28:49.121562 [info ] [MainThread]:   role: dbt_dev_role
+[0m18:28:49.121562 [info ] [MainThread]:   schema: public
+[0m18:28:49.121562 [info ] [MainThread]:   authenticator: None
+[0m18:28:49.125493 [info ] [MainThread]:   private_key_path: None
+[0m18:28:49.128183 [info ] [MainThread]:   oauth_client_id: None
+[0m18:28:49.131379 [info ] [MainThread]:   query_tag: None
+[0m18:28:49.131379 [info ] [MainThread]:   client_session_keep_alive: False
+[0m18:28:49.131379 [info ] [MainThread]:   host: None
+[0m18:28:49.135699 [info ] [MainThread]:   port: None
+[0m18:28:49.137366 [info ] [MainThread]:   proxy_host: None
+[0m18:28:49.138258 [info ] [MainThread]:   proxy_port: None
+[0m18:28:49.138258 [info ] [MainThread]:   protocol: None
+[0m18:28:49.139783 [info ] [MainThread]:   connect_retries: 1
+[0m18:28:49.139783 [info ] [MainThread]:   connect_timeout: None
+[0m18:28:49.142290 [info ] [MainThread]:   retry_on_database_errors: False
+[0m18:28:49.146491 [info ] [MainThread]:   retry_all: False
+[0m18:28:49.146491 [info ] [MainThread]:   insecure_mode: False
+[0m18:28:49.146491 [info ] [MainThread]:   reuse_connections: None
+[0m18:28:49.151778 [info ] [MainThread]: Registered adapter: snowflake=1.7.2
+[0m18:28:49.153601 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m18:28:49.154122 [debug] [MainThread]: Using snowflake connection "debug"
+[0m18:28:49.154122 [debug] [MainThread]: On debug: select 1 as id
+[0m18:28:49.154122 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:28:53.274449 [debug] [MainThread]: SQL status: SUCCESS 1 in 4.0 seconds
+[0m18:28:53.276474 [debug] [MainThread]: On debug: Close
+[0m18:28:53.892299 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m18:28:53.895400 [info ] [MainThread]: [32mAll checks passed![0m
+[0m18:28:53.895400 [debug] [MainThread]: Command `dbt debug` succeeded at 18:28:53.895400 after 5.82 seconds
+[0m18:28:53.898459 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m18:28:53.898459 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B668C3D820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B666734740>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B669ACEAE0>]}
+[0m18:28:53.898459 [debug] [MainThread]: Flushing usage events
+[0m18:31:36.762412 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DF4D598EC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DF4D598950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DF4D598DA0>]}
+
+
+============================== 18:31:36.764456 | 6f738ddd-19d1-4a1f-a5a2-116848bf9171 ==============================
+[0m18:31:36.764456 [info ] [MainThread]: Running with dbt=1.7.10
+[0m18:31:36.772527 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\User\\Desktop\\cosmos-demo\\cosmos-demo\\dbt\\jaffle_shop', 'log_path': 'C:\\Users\\User\\Desktop\\cosmos-demo\\cosmos-demo\\dbt\\jaffle_shop\\logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt docs serve --port 8081', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m18:31:37.417160 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '6f738ddd-19d1-4a1f-a5a2-116848bf9171', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DF4E10A810>]}
+[0m18:31:37.499618 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '6f738ddd-19d1-4a1f-a5a2-116848bf9171', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DF4D4C27B0>]}
+[0m18:31:37.499618 [error] [MainThread]: Encountered an error:
+[WinError 2] The system cannot find the file specified: 'C:\\Users\\User\\Desktop\\cosmos-demo\\cosmos-demo\\dbt\\jaffle_shop\\target'
+[0m18:31:37.555076 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\User\Desktop\cosmos-demo\cosmos-demo\dbt\dbt-env\Lib\site-packages\dbt\cli\requires.py", line 91, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\cosmos-demo\cosmos-demo\dbt\dbt-env\Lib\site-packages\dbt\cli\requires.py", line 76, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\cosmos-demo\cosmos-demo\dbt\dbt-env\Lib\site-packages\dbt\cli\requires.py", line 169, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\cosmos-demo\cosmos-demo\dbt\dbt-env\Lib\site-packages\dbt\cli\requires.py", line 198, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\cosmos-demo\cosmos-demo\dbt\dbt-env\Lib\site-packages\dbt\cli\requires.py", line 245, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\cosmos-demo\cosmos-demo\dbt\dbt-env\Lib\site-packages\dbt\cli\main.py", line 324, in docs_serve
+    results = task.run()
+              ^^^^^^^^^^
+  File "C:\Users\User\Desktop\cosmos-demo\cosmos-demo\dbt\dbt-env\Lib\site-packages\dbt\task\serve.py", line 15, in run
+    os.chdir(self.config.project_target_path)
+FileNotFoundError: [WinError 2] The system cannot find the file specified: 'C:\\Users\\User\\Desktop\\cosmos-demo\\cosmos-demo\\dbt\\jaffle_shop\\target'
+
+[0m18:31:37.562129 [debug] [MainThread]: Command `dbt docs serve` failed at 18:31:37.562129 after 1.01 seconds
+[0m18:31:37.562129 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DF4D5990D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DF4E3366F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DF4E336C00>]}
+[0m18:31:37.562129 [debug] [MainThread]: Flushing usage events
+[0m18:31:50.061203 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C5D3828E60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C5D3828EC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C5D3829370>]}
+
+
+============================== 18:31:50.069338 | f2afb792-4225-4915-8086-2578ea608d16 ==============================
+[0m18:31:50.069338 [info ] [MainThread]: Running with dbt=1.7.10
+[0m18:31:50.071727 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\User\\Desktop\\cosmos-demo\\cosmos-demo\\dbt\\jaffle_shop', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'C:\\Users\\User\\Desktop\\cosmos-demo\\cosmos-demo\\dbt\\jaffle_shop\\logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt docs generate', 'send_anonymous_usage_stats': 'True'}
+[0m18:31:50.792436 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f2afb792-4225-4915-8086-2578ea608d16', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C5D4587860>]}
+[0m18:31:50.936706 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'f2afb792-4225-4915-8086-2578ea608d16', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C5D3B71B20>]}
+[0m18:31:50.938733 [info ] [MainThread]: Registered adapter: snowflake=1.7.2
+[0m18:31:50.967356 [debug] [MainThread]: checksum: b88efa780424265bbbd676e971356ada6a7ea9debd0a80a519a6d2707465340d, vars: {}, profile: , target: , version: 1.7.10
+[0m18:31:50.968756 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m18:31:50.969750 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'f2afb792-4225-4915-8086-2578ea608d16', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C5D472B7D0>]}
+[0m18:31:54.240224 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'f2afb792-4225-4915-8086-2578ea608d16', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C5D3862600>]}
+[0m18:31:54.250727 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'f2afb792-4225-4915-8086-2578ea608d16', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C5D49C2960>]}
+[0m18:31:54.251640 [info ] [MainThread]: Found 5 models, 3 seeds, 20 tests, 0 sources, 0 exposures, 0 metrics, 431 macros, 0 groups, 0 semantic models
+[0m18:31:54.253060 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f2afb792-4225-4915-8086-2578ea608d16', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C5D49B1190>]}
+[0m18:31:54.255951 [info ] [MainThread]: 
+[0m18:31:54.258146 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m18:31:54.260088 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_dbt_hol_dev_public'
+[0m18:31:54.277204 [debug] [ThreadPool]: Using snowflake connection "list_dbt_hol_dev_public"
+[0m18:31:54.278286 [debug] [ThreadPool]: On list_dbt_hol_dev_public: /* {"app": "dbt", "dbt_version": "1.7.10", "profile_name": "jaffle_shop", "target_name": "dev", "connection_name": "list_dbt_hol_dev_public"} */
+show terse objects in dbt_hol_dev.public limit 10000
+[0m18:31:54.279899 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:31:56.883463 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 3.0 seconds
+[0m18:31:56.887594 [debug] [ThreadPool]: On list_dbt_hol_dev_public: Close
+[0m18:31:57.500345 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f2afb792-4225-4915-8086-2578ea608d16', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C5D5A1E960>]}
+[0m18:31:57.502059 [info ] [MainThread]: Concurrency: 200 threads (target='dev')
+[0m18:31:57.504270 [info ] [MainThread]: 
+[0m18:31:57.544667 [debug] [Thread-1 (]: Began running node seed.jaffle_shop.raw_customers
+[0m18:31:57.544667 [debug] [Thread-2 (]: Began running node seed.jaffle_shop.raw_orders
+[0m18:31:57.544667 [debug] [Thread-3 (]: Began running node seed.jaffle_shop.raw_payments
+[0m18:31:57.549688 [debug] [Thread-1 (]: Acquiring new snowflake connection 'seed.jaffle_shop.raw_customers'
+[0m18:31:57.549688 [debug] [Thread-2 (]: Acquiring new snowflake connection 'seed.jaffle_shop.raw_orders'
+[0m18:31:57.552830 [debug] [Thread-3 (]: Acquiring new snowflake connection 'seed.jaffle_shop.raw_payments'
+[0m18:31:57.553233 [debug] [Thread-1 (]: Began compiling node seed.jaffle_shop.raw_customers
+[0m18:31:57.554756 [debug] [Thread-2 (]: Began compiling node seed.jaffle_shop.raw_orders
+[0m18:31:57.555715 [debug] [Thread-3 (]: Began compiling node seed.jaffle_shop.raw_payments
+[0m18:31:57.562800 [debug] [Thread-1 (]: Timing info for seed.jaffle_shop.raw_customers (compile): 18:31:57.555715 => 18:31:57.562800
+[0m18:31:57.564903 [debug] [Thread-2 (]: Timing info for seed.jaffle_shop.raw_orders (compile): 18:31:57.564903 => 18:31:57.564903
+[0m18:31:57.564903 [debug] [Thread-3 (]: Timing info for seed.jaffle_shop.raw_payments (compile): 18:31:57.564903 => 18:31:57.564903
+[0m18:31:57.569860 [debug] [Thread-1 (]: Began executing node seed.jaffle_shop.raw_customers
+[0m18:31:57.571331 [debug] [Thread-2 (]: Began executing node seed.jaffle_shop.raw_orders
+[0m18:31:57.571924 [debug] [Thread-3 (]: Began executing node seed.jaffle_shop.raw_payments
+[0m18:31:57.572988 [debug] [Thread-1 (]: Timing info for seed.jaffle_shop.raw_customers (execute): 18:31:57.572988 => 18:31:57.572988
+[0m18:31:57.572988 [debug] [Thread-2 (]: Timing info for seed.jaffle_shop.raw_orders (execute): 18:31:57.572988 => 18:31:57.572988
+[0m18:31:57.572988 [debug] [Thread-3 (]: Timing info for seed.jaffle_shop.raw_payments (execute): 18:31:57.572988 => 18:31:57.572988
+[0m18:31:57.572988 [debug] [Thread-1 (]: Finished running node seed.jaffle_shop.raw_customers
+[0m18:31:57.572988 [debug] [Thread-2 (]: Finished running node seed.jaffle_shop.raw_orders
+[0m18:31:57.572988 [debug] [Thread-3 (]: Finished running node seed.jaffle_shop.raw_payments
+[0m18:31:57.572988 [debug] [Thread-5 (]: Began running node model.jaffle_shop.stg_customers
+[0m18:31:57.582082 [debug] [Thread-3 (]: Began running node model.jaffle_shop.stg_orders
+[0m18:31:57.583187 [debug] [Thread-8 (]: Began running node model.jaffle_shop.stg_payments
+[0m18:31:57.583187 [debug] [Thread-5 (]: Acquiring new snowflake connection 'model.jaffle_shop.stg_customers'
+[0m18:31:57.586423 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly seed.jaffle_shop.raw_payments, now model.jaffle_shop.stg_orders)
+[0m18:31:57.586423 [debug] [Thread-8 (]: Acquiring new snowflake connection 'model.jaffle_shop.stg_payments'
+[0m18:31:57.586423 [debug] [Thread-5 (]: Began compiling node model.jaffle_shop.stg_customers
+[0m18:31:57.586423 [debug] [Thread-3 (]: Began compiling node model.jaffle_shop.stg_orders
+[0m18:31:57.589949 [debug] [Thread-8 (]: Began compiling node model.jaffle_shop.stg_payments
+[0m18:31:57.593488 [debug] [Thread-5 (]: Writing injected SQL for node "model.jaffle_shop.stg_customers"
+[0m18:31:57.603183 [debug] [Thread-3 (]: Writing injected SQL for node "model.jaffle_shop.stg_orders"
+[0m18:31:57.610186 [debug] [Thread-8 (]: Writing injected SQL for node "model.jaffle_shop.stg_payments"
+[0m18:31:57.615543 [debug] [Thread-5 (]: Timing info for model.jaffle_shop.stg_customers (compile): 18:31:57.589949 => 18:31:57.614853
+[0m18:31:57.616043 [debug] [Thread-8 (]: Timing info for model.jaffle_shop.stg_payments (compile): 18:31:57.603845 => 18:31:57.616043
+[0m18:31:57.616043 [debug] [Thread-3 (]: Timing info for model.jaffle_shop.stg_orders (compile): 18:31:57.595547 => 18:31:57.616043
+[0m18:31:57.616043 [debug] [Thread-5 (]: Began executing node model.jaffle_shop.stg_customers
+[0m18:31:57.616043 [debug] [Thread-8 (]: Began executing node model.jaffle_shop.stg_payments
+[0m18:31:57.616043 [debug] [Thread-3 (]: Began executing node model.jaffle_shop.stg_orders
+[0m18:31:57.621294 [debug] [Thread-5 (]: Timing info for model.jaffle_shop.stg_customers (execute): 18:31:57.620786 => 18:31:57.620786
+[0m18:31:57.621294 [debug] [Thread-8 (]: Timing info for model.jaffle_shop.stg_payments (execute): 18:31:57.621294 => 18:31:57.621294
+[0m18:31:57.623835 [debug] [Thread-3 (]: Timing info for model.jaffle_shop.stg_orders (execute): 18:31:57.621294 => 18:31:57.621294
+[0m18:31:57.623835 [debug] [Thread-5 (]: Finished running node model.jaffle_shop.stg_customers
+[0m18:31:57.623835 [debug] [Thread-8 (]: Finished running node model.jaffle_shop.stg_payments
+[0m18:31:57.628821 [debug] [Thread-3 (]: Finished running node model.jaffle_shop.stg_orders
+[0m18:31:57.628821 [debug] [Thread-10 ]: Began running node test.jaffle_shop.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m18:31:57.631890 [debug] [Thread-11 ]: Began running node test.jaffle_shop.unique_stg_customers_customer_id.c7614daada
+[0m18:31:57.631890 [debug] [Thread-13 ]: Began running node test.jaffle_shop.accepted_values_stg_payments_payment_method__credit_card__coupon__bank_transfer__gift_card.3c3820f278
+[0m18:31:57.631890 [debug] [Thread-14 ]: Began running node test.jaffle_shop.not_null_stg_payments_payment_id.c19cc50075
+[0m18:31:57.631890 [debug] [Thread-3 (]: Began running node test.jaffle_shop.unique_stg_payments_payment_id.3744510712
+[0m18:31:57.631890 [debug] [Thread-10 ]: Acquiring new snowflake connection 'test.jaffle_shop.not_null_stg_customers_customer_id.e2cfb1f9aa'
+[0m18:31:57.636879 [debug] [Thread-16 ]: Began running node model.jaffle_shop.customers
+[0m18:31:57.636879 [debug] [Thread-11 ]: Acquiring new snowflake connection 'test.jaffle_shop.unique_stg_customers_customer_id.c7614daada'
+[0m18:31:57.638384 [debug] [Thread-17 ]: Began running node model.jaffle_shop.orders
+[0m18:31:57.638384 [debug] [Thread-18 ]: Began running node test.jaffle_shop.accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned.080fb20aad
+[0m18:31:57.638384 [debug] [Thread-19 ]: Began running node test.jaffle_shop.not_null_stg_orders_order_id.81cfe2fe64
+[0m18:31:57.638384 [debug] [Thread-20 ]: Began running node test.jaffle_shop.unique_stg_orders_order_id.e3b841c71a
+[0m18:31:57.638384 [debug] [Thread-13 ]: Acquiring new snowflake connection 'test.jaffle_shop.accepted_values_stg_payments_payment_method__credit_card__coupon__bank_transfer__gift_card.3c3820f278'
+[0m18:31:57.643089 [debug] [Thread-14 ]: Acquiring new snowflake connection 'test.jaffle_shop.not_null_stg_payments_payment_id.c19cc50075'
+[0m18:31:57.643089 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.jaffle_shop.stg_orders, now test.jaffle_shop.unique_stg_payments_payment_id.3744510712)
+[0m18:31:57.643089 [debug] [Thread-10 ]: Began compiling node test.jaffle_shop.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m18:31:57.643089 [debug] [Thread-16 ]: Acquiring new snowflake connection 'model.jaffle_shop.customers'
+[0m18:31:57.643089 [debug] [Thread-11 ]: Began compiling node test.jaffle_shop.unique_stg_customers_customer_id.c7614daada
+[0m18:31:57.647654 [debug] [Thread-17 ]: Acquiring new snowflake connection 'model.jaffle_shop.orders'
+[0m18:31:57.647654 [debug] [Thread-18 ]: Acquiring new snowflake connection 'test.jaffle_shop.accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned.080fb20aad'
+[0m18:31:57.647654 [debug] [Thread-19 ]: Acquiring new snowflake connection 'test.jaffle_shop.not_null_stg_orders_order_id.81cfe2fe64'
+[0m18:31:57.647654 [debug] [Thread-20 ]: Acquiring new snowflake connection 'test.jaffle_shop.unique_stg_orders_order_id.e3b841c71a'
+[0m18:31:57.652164 [debug] [Thread-13 ]: Began compiling node test.jaffle_shop.accepted_values_stg_payments_payment_method__credit_card__coupon__bank_transfer__gift_card.3c3820f278
+[0m18:31:57.652164 [debug] [Thread-14 ]: Began compiling node test.jaffle_shop.not_null_stg_payments_payment_id.c19cc50075
+[0m18:31:57.652164 [debug] [Thread-3 (]: Began compiling node test.jaffle_shop.unique_stg_payments_payment_id.3744510712
+[0m18:31:57.655598 [debug] [Thread-10 ]: Writing injected SQL for node "test.jaffle_shop.not_null_stg_customers_customer_id.e2cfb1f9aa"
+[0m18:31:57.666134 [debug] [Thread-16 ]: Began compiling node model.jaffle_shop.customers
+[0m18:31:57.669741 [debug] [Thread-11 ]: Writing injected SQL for node "test.jaffle_shop.unique_stg_customers_customer_id.c7614daada"
+[0m18:31:57.669741 [debug] [Thread-17 ]: Began compiling node model.jaffle_shop.orders
+[0m18:31:57.669741 [debug] [Thread-18 ]: Began compiling node test.jaffle_shop.accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned.080fb20aad
+[0m18:31:57.669741 [debug] [Thread-19 ]: Began compiling node test.jaffle_shop.not_null_stg_orders_order_id.81cfe2fe64
+[0m18:31:57.669741 [debug] [Thread-20 ]: Began compiling node test.jaffle_shop.unique_stg_orders_order_id.e3b841c71a
+[0m18:31:57.669741 [debug] [Thread-13 ]: Writing injected SQL for node "test.jaffle_shop.accepted_values_stg_payments_payment_method__credit_card__coupon__bank_transfer__gift_card.3c3820f278"
+[0m18:31:57.689123 [debug] [Thread-14 ]: Writing injected SQL for node "test.jaffle_shop.not_null_stg_payments_payment_id.c19cc50075"
+[0m18:31:57.689123 [debug] [Thread-3 (]: Writing injected SQL for node "test.jaffle_shop.unique_stg_payments_payment_id.3744510712"
+[0m18:31:57.700020 [debug] [Thread-16 ]: Writing injected SQL for node "model.jaffle_shop.customers"
+[0m18:31:57.704768 [debug] [Thread-10 ]: Timing info for test.jaffle_shop.not_null_stg_customers_customer_id.e2cfb1f9aa (compile): 18:31:57.652164 => 18:31:57.700020
+[0m18:31:57.710898 [debug] [Thread-17 ]: Writing injected SQL for node "model.jaffle_shop.orders"
+[0m18:31:57.710898 [debug] [Thread-18 ]: Writing injected SQL for node "test.jaffle_shop.accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned.080fb20aad"
+[0m18:31:57.710898 [debug] [Thread-11 ]: Timing info for test.jaffle_shop.unique_stg_customers_customer_id.c7614daada (compile): 18:31:57.666134 => 18:31:57.710898
+[0m18:31:57.710898 [debug] [Thread-19 ]: Writing injected SQL for node "test.jaffle_shop.not_null_stg_orders_order_id.81cfe2fe64"
+[0m18:31:57.725833 [debug] [Thread-20 ]: Writing injected SQL for node "test.jaffle_shop.unique_stg_orders_order_id.e3b841c71a"
+[0m18:31:57.731362 [debug] [Thread-10 ]: Began executing node test.jaffle_shop.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m18:31:57.732807 [debug] [Thread-13 ]: Timing info for test.jaffle_shop.accepted_values_stg_payments_payment_method__credit_card__coupon__bank_transfer__gift_card.3c3820f278 (compile): 18:31:57.669741 => 18:31:57.732303
+[0m18:31:57.734277 [debug] [Thread-16 ]: Timing info for model.jaffle_shop.customers (compile): 18:31:57.695863 => 18:31:57.733952
+[0m18:31:57.735102 [debug] [Thread-3 (]: Timing info for test.jaffle_shop.unique_stg_payments_payment_id.3744510712 (compile): 18:31:57.689123 => 18:31:57.734277
+[0m18:31:57.735604 [debug] [Thread-14 ]: Timing info for test.jaffle_shop.not_null_stg_payments_payment_id.c19cc50075 (compile): 18:31:57.669741 => 18:31:57.735604
+[0m18:31:57.748481 [debug] [Thread-14 ]: Began executing node test.jaffle_shop.not_null_stg_payments_payment_id.c19cc50075
+[0m18:31:57.738079 [debug] [Thread-11 ]: Began executing node test.jaffle_shop.unique_stg_customers_customer_id.c7614daada
+[0m18:31:57.738922 [debug] [Thread-18 ]: Timing info for test.jaffle_shop.accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned.080fb20aad (compile): 18:31:57.710898 => 18:31:57.738922
+[0m18:31:57.752568 [debug] [Thread-18 ]: Began executing node test.jaffle_shop.accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned.080fb20aad
+[0m18:31:57.741970 [debug] [Thread-19 ]: Timing info for test.jaffle_shop.not_null_stg_orders_order_id.81cfe2fe64 (compile): 18:31:57.710898 => 18:31:57.741970
+[0m18:31:57.743505 [debug] [Thread-13 ]: Began executing node test.jaffle_shop.accepted_values_stg_payments_payment_method__credit_card__coupon__bank_transfer__gift_card.3c3820f278
+[0m18:31:57.745230 [debug] [Thread-20 ]: Timing info for test.jaffle_shop.unique_stg_orders_order_id.e3b841c71a (compile): 18:31:57.724021 => 18:31:57.743505
+[0m18:31:57.746522 [debug] [Thread-16 ]: Began executing node model.jaffle_shop.customers
+[0m18:31:57.747628 [debug] [Thread-3 (]: Began executing node test.jaffle_shop.unique_stg_payments_payment_id.3744510712
+[0m18:31:57.748982 [debug] [Thread-14 ]: Timing info for test.jaffle_shop.not_null_stg_payments_payment_id.c19cc50075 (execute): 18:31:57.748982 => 18:31:57.748982
+[0m18:31:57.737552 [debug] [Thread-17 ]: Timing info for model.jaffle_shop.orders (compile): 18:31:57.704768 => 18:31:57.735604
+[0m18:31:57.748982 [debug] [Thread-11 ]: Timing info for test.jaffle_shop.unique_stg_customers_customer_id.c7614daada (execute): 18:31:57.748982 => 18:31:57.748982
+[0m18:31:57.741482 [debug] [Thread-10 ]: Timing info for test.jaffle_shop.not_null_stg_customers_customer_id.e2cfb1f9aa (execute): 18:31:57.740968 => 18:31:57.740968
+[0m18:31:57.753745 [debug] [Thread-18 ]: Timing info for test.jaffle_shop.accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned.080fb20aad (execute): 18:31:57.753246 => 18:31:57.753246
+[0m18:31:57.754749 [debug] [Thread-19 ]: Began executing node test.jaffle_shop.not_null_stg_orders_order_id.81cfe2fe64
+[0m18:31:57.756549 [debug] [Thread-13 ]: Timing info for test.jaffle_shop.accepted_values_stg_payments_payment_method__credit_card__coupon__bank_transfer__gift_card.3c3820f278 (execute): 18:31:57.755551 => 18:31:57.755551
+[0m18:31:57.757616 [debug] [Thread-20 ]: Began executing node test.jaffle_shop.unique_stg_orders_order_id.e3b841c71a
+[0m18:31:57.758746 [debug] [Thread-16 ]: Timing info for model.jaffle_shop.customers (execute): 18:31:57.758474 => 18:31:57.758474
+[0m18:31:57.760407 [debug] [Thread-3 (]: Timing info for test.jaffle_shop.unique_stg_payments_payment_id.3744510712 (execute): 18:31:57.759804 => 18:31:57.759804
+[0m18:31:57.762866 [debug] [Thread-14 ]: Finished running node test.jaffle_shop.not_null_stg_payments_payment_id.c19cc50075
+[0m18:31:57.763866 [debug] [Thread-17 ]: Began executing node model.jaffle_shop.orders
+[0m18:31:57.766681 [debug] [Thread-11 ]: Finished running node test.jaffle_shop.unique_stg_customers_customer_id.c7614daada
+[0m18:31:57.768392 [debug] [Thread-10 ]: Finished running node test.jaffle_shop.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m18:31:57.771288 [debug] [Thread-18 ]: Finished running node test.jaffle_shop.accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned.080fb20aad
+[0m18:31:57.772549 [debug] [Thread-19 ]: Timing info for test.jaffle_shop.not_null_stg_orders_order_id.81cfe2fe64 (execute): 18:31:57.772050 => 18:31:57.772050
+[0m18:31:57.773553 [debug] [Thread-13 ]: Finished running node test.jaffle_shop.accepted_values_stg_payments_payment_method__credit_card__coupon__bank_transfer__gift_card.3c3820f278
+[0m18:31:57.776490 [debug] [Thread-20 ]: Timing info for test.jaffle_shop.unique_stg_orders_order_id.e3b841c71a (execute): 18:31:57.773553 => 18:31:57.773553
+[0m18:31:57.779058 [debug] [Thread-16 ]: Finished running node model.jaffle_shop.customers
+[0m18:31:57.781121 [debug] [Thread-3 (]: Finished running node test.jaffle_shop.unique_stg_payments_payment_id.3744510712
+[0m18:31:57.782220 [debug] [Thread-17 ]: Timing info for model.jaffle_shop.orders (execute): 18:31:57.782220 => 18:31:57.782220
+[0m18:31:57.786033 [debug] [Thread-19 ]: Finished running node test.jaffle_shop.not_null_stg_orders_order_id.81cfe2fe64
+[0m18:31:57.788011 [debug] [Thread-20 ]: Finished running node test.jaffle_shop.unique_stg_orders_order_id.e3b841c71a
+[0m18:31:57.789513 [debug] [Thread-22 ]: Began running node test.jaffle_shop.not_null_customers_customer_id.5c9bf9911d
+[0m18:31:57.790515 [debug] [Thread-23 ]: Began running node test.jaffle_shop.unique_customers_customer_id.c5af1ff4b1
+[0m18:31:57.793271 [debug] [Thread-17 ]: Finished running node model.jaffle_shop.orders
+[0m18:31:57.796615 [debug] [Thread-22 ]: Acquiring new snowflake connection 'test.jaffle_shop.not_null_customers_customer_id.5c9bf9911d'
+[0m18:31:57.798612 [debug] [Thread-23 ]: Acquiring new snowflake connection 'test.jaffle_shop.unique_customers_customer_id.c5af1ff4b1'
+[0m18:31:57.800511 [debug] [Thread-25 ]: Began running node test.jaffle_shop.accepted_values_orders_status__placed__shipped__completed__return_pending__returned.be6b5b5ec3
+[0m18:31:57.800511 [debug] [Thread-22 ]: Began compiling node test.jaffle_shop.not_null_customers_customer_id.5c9bf9911d
+[0m18:31:57.802091 [debug] [Thread-26 ]: Began running node test.jaffle_shop.not_null_orders_amount.106140f9fd
+[0m18:31:57.803533 [debug] [Thread-27 ]: Began running node test.jaffle_shop.not_null_orders_bank_transfer_amount.7743500c49
+[0m18:31:57.803533 [debug] [Thread-28 ]: Began running node test.jaffle_shop.not_null_orders_coupon_amount.ab90c90625
+[0m18:31:57.805148 [debug] [Thread-29 ]: Began running node test.jaffle_shop.not_null_orders_credit_card_amount.d3ca593b59
+[0m18:31:57.805148 [debug] [Thread-30 ]: Began running node test.jaffle_shop.not_null_orders_customer_id.c5f02694af
+[0m18:31:57.805148 [debug] [Thread-31 ]: Began running node test.jaffle_shop.not_null_orders_gift_card_amount.413a0d2d7a
+[0m18:31:57.805148 [debug] [Thread-32 ]: Began running node test.jaffle_shop.not_null_orders_order_id.cf6c17daed
+[0m18:31:57.810175 [debug] [Thread-23 ]: Began compiling node test.jaffle_shop.unique_customers_customer_id.c5af1ff4b1
+[0m18:31:57.810175 [debug] [Thread-33 ]: Began running node test.jaffle_shop.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2
+[0m18:31:57.812373 [debug] [Thread-34 ]: Began running node test.jaffle_shop.unique_orders_order_id.fed79b3a6e
+[0m18:31:57.813804 [debug] [Thread-25 ]: Acquiring new snowflake connection 'test.jaffle_shop.accepted_values_orders_status__placed__shipped__completed__return_pending__returned.be6b5b5ec3'
+[0m18:31:57.824714 [debug] [Thread-22 ]: Writing injected SQL for node "test.jaffle_shop.not_null_customers_customer_id.5c9bf9911d"
+[0m18:31:57.825271 [debug] [Thread-26 ]: Acquiring new snowflake connection 'test.jaffle_shop.not_null_orders_amount.106140f9fd'
+[0m18:31:57.826822 [debug] [Thread-27 ]: Acquiring new snowflake connection 'test.jaffle_shop.not_null_orders_bank_transfer_amount.7743500c49'
+[0m18:31:57.829406 [debug] [Thread-28 ]: Acquiring new snowflake connection 'test.jaffle_shop.not_null_orders_coupon_amount.ab90c90625'
+[0m18:31:57.831264 [debug] [Thread-29 ]: Acquiring new snowflake connection 'test.jaffle_shop.not_null_orders_credit_card_amount.d3ca593b59'
+[0m18:31:57.831264 [debug] [Thread-30 ]: Acquiring new snowflake connection 'test.jaffle_shop.not_null_orders_customer_id.c5f02694af'
+[0m18:31:57.834756 [debug] [Thread-31 ]: Acquiring new snowflake connection 'test.jaffle_shop.not_null_orders_gift_card_amount.413a0d2d7a'
+[0m18:31:57.835994 [debug] [Thread-32 ]: Acquiring new snowflake connection 'test.jaffle_shop.not_null_orders_order_id.cf6c17daed'
+[0m18:31:57.844714 [debug] [Thread-23 ]: Writing injected SQL for node "test.jaffle_shop.unique_customers_customer_id.c5af1ff4b1"
+[0m18:31:57.845750 [debug] [Thread-33 ]: Acquiring new snowflake connection 'test.jaffle_shop.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2'
+[0m18:31:57.845750 [debug] [Thread-34 ]: Acquiring new snowflake connection 'test.jaffle_shop.unique_orders_order_id.fed79b3a6e'
+[0m18:31:57.845750 [debug] [Thread-25 ]: Began compiling node test.jaffle_shop.accepted_values_orders_status__placed__shipped__completed__return_pending__returned.be6b5b5ec3
+[0m18:31:57.850696 [debug] [Thread-26 ]: Began compiling node test.jaffle_shop.not_null_orders_amount.106140f9fd
+[0m18:31:57.851812 [debug] [Thread-27 ]: Began compiling node test.jaffle_shop.not_null_orders_bank_transfer_amount.7743500c49
+[0m18:31:57.853186 [debug] [Thread-28 ]: Began compiling node test.jaffle_shop.not_null_orders_coupon_amount.ab90c90625
+[0m18:31:57.854690 [debug] [Thread-22 ]: Timing info for test.jaffle_shop.not_null_customers_customer_id.5c9bf9911d (compile): 18:31:57.813804 => 18:31:57.854189
+[0m18:31:57.854690 [debug] [Thread-29 ]: Began compiling node test.jaffle_shop.not_null_orders_credit_card_amount.d3ca593b59
+[0m18:31:57.857134 [debug] [Thread-30 ]: Began compiling node test.jaffle_shop.not_null_orders_customer_id.c5f02694af
+[0m18:31:57.858395 [debug] [Thread-31 ]: Began compiling node test.jaffle_shop.not_null_orders_gift_card_amount.413a0d2d7a
+[0m18:31:57.858895 [debug] [Thread-32 ]: Began compiling node test.jaffle_shop.not_null_orders_order_id.cf6c17daed
+[0m18:31:57.860980 [debug] [Thread-33 ]: Began compiling node test.jaffle_shop.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2
+[0m18:31:57.862225 [debug] [Thread-34 ]: Began compiling node test.jaffle_shop.unique_orders_order_id.fed79b3a6e
+[0m18:31:57.863696 [debug] [Thread-23 ]: Timing info for test.jaffle_shop.unique_customers_customer_id.c5af1ff4b1 (compile): 18:31:57.836439 => 18:31:57.863261
+[0m18:31:57.872444 [debug] [Thread-25 ]: Writing injected SQL for node "test.jaffle_shop.accepted_values_orders_status__placed__shipped__completed__return_pending__returned.be6b5b5ec3"
+[0m18:31:57.880499 [debug] [Thread-26 ]: Writing injected SQL for node "test.jaffle_shop.not_null_orders_amount.106140f9fd"
+[0m18:31:57.895627 [debug] [Thread-27 ]: Writing injected SQL for node "test.jaffle_shop.not_null_orders_bank_transfer_amount.7743500c49"
+[0m18:31:57.904321 [debug] [Thread-28 ]: Writing injected SQL for node "test.jaffle_shop.not_null_orders_coupon_amount.ab90c90625"
+[0m18:31:57.905857 [debug] [Thread-22 ]: Began executing node test.jaffle_shop.not_null_customers_customer_id.5c9bf9911d
+[0m18:31:57.915329 [debug] [Thread-29 ]: Writing injected SQL for node "test.jaffle_shop.not_null_orders_credit_card_amount.d3ca593b59"
+[0m18:31:57.925415 [debug] [Thread-30 ]: Writing injected SQL for node "test.jaffle_shop.not_null_orders_customer_id.c5f02694af"
+[0m18:31:57.933012 [debug] [Thread-31 ]: Writing injected SQL for node "test.jaffle_shop.not_null_orders_gift_card_amount.413a0d2d7a"
+[0m18:31:57.943318 [debug] [Thread-32 ]: Writing injected SQL for node "test.jaffle_shop.not_null_orders_order_id.cf6c17daed"
+[0m18:31:57.948406 [debug] [Thread-33 ]: Writing injected SQL for node "test.jaffle_shop.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2"
+[0m18:31:57.956358 [debug] [Thread-34 ]: Writing injected SQL for node "test.jaffle_shop.unique_orders_order_id.fed79b3a6e"
+[0m18:31:57.956358 [debug] [Thread-23 ]: Began executing node test.jaffle_shop.unique_customers_customer_id.c5af1ff4b1
+[0m18:31:57.963905 [debug] [Thread-22 ]: Timing info for test.jaffle_shop.not_null_customers_customer_id.5c9bf9911d (execute): 18:31:57.956358 => 18:31:57.956358
+[0m18:31:57.965426 [debug] [Thread-25 ]: Timing info for test.jaffle_shop.accepted_values_orders_status__placed__shipped__completed__return_pending__returned.be6b5b5ec3 (compile): 18:31:57.863696 => 18:31:57.964923
+[0m18:31:57.966690 [debug] [Thread-26 ]: Timing info for test.jaffle_shop.not_null_orders_amount.106140f9fd (compile): 18:31:57.874989 => 18:31:57.966190
+[0m18:31:57.968057 [debug] [Thread-27 ]: Timing info for test.jaffle_shop.not_null_orders_bank_transfer_amount.7743500c49 (compile): 18:31:57.880499 => 18:31:57.968057
+[0m18:31:57.970298 [debug] [Thread-29 ]: Timing info for test.jaffle_shop.not_null_orders_credit_card_amount.d3ca593b59 (compile): 18:31:57.906856 => 18:31:57.969797
+[0m18:31:57.971308 [debug] [Thread-28 ]: Timing info for test.jaffle_shop.not_null_orders_coupon_amount.ab90c90625 (compile): 18:31:57.895627 => 18:31:57.970298
+[0m18:31:57.971541 [debug] [Thread-30 ]: Timing info for test.jaffle_shop.not_null_orders_customer_id.c5f02694af (compile): 18:31:57.916538 => 18:31:57.971541
+[0m18:31:57.974204 [debug] [Thread-31 ]: Timing info for test.jaffle_shop.not_null_orders_gift_card_amount.413a0d2d7a (compile): 18:31:57.926417 => 18:31:57.973773
+[0m18:31:57.975725 [debug] [Thread-32 ]: Timing info for test.jaffle_shop.not_null_orders_order_id.cf6c17daed (compile): 18:31:57.933914 => 18:31:57.975725
+[0m18:31:57.978041 [debug] [Thread-23 ]: Timing info for test.jaffle_shop.unique_customers_customer_id.c5af1ff4b1 (execute): 18:31:57.975725 => 18:31:57.975725
+[0m18:31:57.978041 [debug] [Thread-33 ]: Timing info for test.jaffle_shop.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2 (compile): 18:31:57.944322 => 18:31:57.978041
+[0m18:31:57.980448 [debug] [Thread-22 ]: Finished running node test.jaffle_shop.not_null_customers_customer_id.5c9bf9911d
+[0m18:31:57.983628 [debug] [Thread-34 ]: Timing info for test.jaffle_shop.unique_orders_order_id.fed79b3a6e (compile): 18:31:57.948406 => 18:31:57.980448
+[0m18:31:57.983628 [debug] [Thread-25 ]: Began executing node test.jaffle_shop.accepted_values_orders_status__placed__shipped__completed__return_pending__returned.be6b5b5ec3
+[0m18:31:57.986161 [debug] [Thread-26 ]: Began executing node test.jaffle_shop.not_null_orders_amount.106140f9fd
+[0m18:31:57.987464 [debug] [Thread-27 ]: Began executing node test.jaffle_shop.not_null_orders_bank_transfer_amount.7743500c49
+[0m18:31:57.987464 [debug] [Thread-29 ]: Began executing node test.jaffle_shop.not_null_orders_credit_card_amount.d3ca593b59
+[0m18:31:57.987464 [debug] [Thread-28 ]: Began executing node test.jaffle_shop.not_null_orders_coupon_amount.ab90c90625
+[0m18:31:57.987464 [debug] [Thread-30 ]: Began executing node test.jaffle_shop.not_null_orders_customer_id.c5f02694af
+[0m18:31:57.987464 [debug] [Thread-31 ]: Began executing node test.jaffle_shop.not_null_orders_gift_card_amount.413a0d2d7a
+[0m18:31:57.987464 [debug] [Thread-32 ]: Began executing node test.jaffle_shop.not_null_orders_order_id.cf6c17daed
+[0m18:31:57.994279 [debug] [Thread-23 ]: Finished running node test.jaffle_shop.unique_customers_customer_id.c5af1ff4b1
+[0m18:31:57.995354 [debug] [Thread-33 ]: Began executing node test.jaffle_shop.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2
+[0m18:31:57.995354 [debug] [Thread-34 ]: Began executing node test.jaffle_shop.unique_orders_order_id.fed79b3a6e
+[0m18:31:57.995354 [debug] [Thread-25 ]: Timing info for test.jaffle_shop.accepted_values_orders_status__placed__shipped__completed__return_pending__returned.be6b5b5ec3 (execute): 18:31:57.995354 => 18:31:57.995354
+[0m18:31:57.995354 [debug] [Thread-26 ]: Timing info for test.jaffle_shop.not_null_orders_amount.106140f9fd (execute): 18:31:57.995354 => 18:31:57.995354
+[0m18:31:57.995354 [debug] [Thread-27 ]: Timing info for test.jaffle_shop.not_null_orders_bank_transfer_amount.7743500c49 (execute): 18:31:57.995354 => 18:31:57.995354
+[0m18:31:57.995354 [debug] [Thread-29 ]: Timing info for test.jaffle_shop.not_null_orders_credit_card_amount.d3ca593b59 (execute): 18:31:57.995354 => 18:31:57.995354
+[0m18:31:57.995354 [debug] [Thread-28 ]: Timing info for test.jaffle_shop.not_null_orders_coupon_amount.ab90c90625 (execute): 18:31:57.995354 => 18:31:57.995354
+[0m18:31:57.995354 [debug] [Thread-30 ]: Timing info for test.jaffle_shop.not_null_orders_customer_id.c5f02694af (execute): 18:31:57.995354 => 18:31:57.995354
+[0m18:31:57.995354 [debug] [Thread-31 ]: Timing info for test.jaffle_shop.not_null_orders_gift_card_amount.413a0d2d7a (execute): 18:31:57.995354 => 18:31:57.995354
+[0m18:31:57.995354 [debug] [Thread-32 ]: Timing info for test.jaffle_shop.not_null_orders_order_id.cf6c17daed (execute): 18:31:57.995354 => 18:31:57.995354
+[0m18:31:57.995354 [debug] [Thread-33 ]: Timing info for test.jaffle_shop.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2 (execute): 18:31:57.995354 => 18:31:57.995354
+[0m18:31:57.995354 [debug] [Thread-34 ]: Timing info for test.jaffle_shop.unique_orders_order_id.fed79b3a6e (execute): 18:31:57.995354 => 18:31:57.995354
+[0m18:31:57.995354 [debug] [Thread-25 ]: Finished running node test.jaffle_shop.accepted_values_orders_status__placed__shipped__completed__return_pending__returned.be6b5b5ec3
+[0m18:31:57.995354 [debug] [Thread-26 ]: Finished running node test.jaffle_shop.not_null_orders_amount.106140f9fd
+[0m18:31:58.011589 [debug] [Thread-27 ]: Finished running node test.jaffle_shop.not_null_orders_bank_transfer_amount.7743500c49
+[0m18:31:58.011589 [debug] [Thread-29 ]: Finished running node test.jaffle_shop.not_null_orders_credit_card_amount.d3ca593b59
+[0m18:31:58.011589 [debug] [Thread-28 ]: Finished running node test.jaffle_shop.not_null_orders_coupon_amount.ab90c90625
+[0m18:31:58.016148 [debug] [Thread-30 ]: Finished running node test.jaffle_shop.not_null_orders_customer_id.c5f02694af
+[0m18:31:58.016148 [debug] [Thread-31 ]: Finished running node test.jaffle_shop.not_null_orders_gift_card_amount.413a0d2d7a
+[0m18:31:58.016148 [debug] [Thread-32 ]: Finished running node test.jaffle_shop.not_null_orders_order_id.cf6c17daed
+[0m18:31:58.016148 [debug] [Thread-33 ]: Finished running node test.jaffle_shop.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2
+[0m18:31:58.016148 [debug] [Thread-34 ]: Finished running node test.jaffle_shop.unique_orders_order_id.fed79b3a6e
+[0m18:31:58.034850 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m18:31:58.034850 [debug] [MainThread]: Connection 'list_dbt_hol_dev_public' was properly closed.
+[0m18:31:58.034850 [debug] [MainThread]: Connection 'seed.jaffle_shop.raw_customers' was properly closed.
+[0m18:31:58.039676 [debug] [MainThread]: Connection 'seed.jaffle_shop.raw_orders' was properly closed.
+[0m18:31:58.039676 [debug] [MainThread]: Connection 'test.jaffle_shop.unique_stg_payments_payment_id.3744510712' was properly closed.
+[0m18:31:58.039676 [debug] [MainThread]: Connection 'model.jaffle_shop.stg_customers' was properly closed.
+[0m18:31:58.039676 [debug] [MainThread]: Connection 'model.jaffle_shop.stg_payments' was properly closed.
+[0m18:31:58.039676 [debug] [MainThread]: Connection 'test.jaffle_shop.not_null_stg_customers_customer_id.e2cfb1f9aa' was properly closed.
+[0m18:31:58.039676 [debug] [MainThread]: Connection 'test.jaffle_shop.unique_stg_customers_customer_id.c7614daada' was properly closed.
+[0m18:31:58.039676 [debug] [MainThread]: Connection 'test.jaffle_shop.accepted_values_stg_payments_payment_method__credit_card__coupon__bank_transfer__gift_card.3c3820f278' was properly closed.
+[0m18:31:58.039676 [debug] [MainThread]: Connection 'test.jaffle_shop.not_null_stg_payments_payment_id.c19cc50075' was properly closed.
+[0m18:31:58.039676 [debug] [MainThread]: Connection 'model.jaffle_shop.customers' was properly closed.
+[0m18:31:58.046064 [debug] [MainThread]: Connection 'model.jaffle_shop.orders' was properly closed.
+[0m18:31:58.046064 [debug] [MainThread]: Connection 'test.jaffle_shop.accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned.080fb20aad' was properly closed.
+[0m18:31:58.046064 [debug] [MainThread]: Connection 'test.jaffle_shop.not_null_stg_orders_order_id.81cfe2fe64' was properly closed.
+[0m18:31:58.046064 [debug] [MainThread]: Connection 'test.jaffle_shop.unique_stg_orders_order_id.e3b841c71a' was properly closed.
+[0m18:31:58.046064 [debug] [MainThread]: Connection 'test.jaffle_shop.not_null_customers_customer_id.5c9bf9911d' was properly closed.
+[0m18:31:58.046064 [debug] [MainThread]: Connection 'test.jaffle_shop.unique_customers_customer_id.c5af1ff4b1' was properly closed.
+[0m18:31:58.046064 [debug] [MainThread]: Connection 'test.jaffle_shop.accepted_values_orders_status__placed__shipped__completed__return_pending__returned.be6b5b5ec3' was properly closed.
+[0m18:31:58.046064 [debug] [MainThread]: Connection 'test.jaffle_shop.not_null_orders_amount.106140f9fd' was properly closed.
+[0m18:31:58.046064 [debug] [MainThread]: Connection 'test.jaffle_shop.not_null_orders_bank_transfer_amount.7743500c49' was properly closed.
+[0m18:31:58.046064 [debug] [MainThread]: Connection 'test.jaffle_shop.not_null_orders_coupon_amount.ab90c90625' was properly closed.
+[0m18:31:58.054575 [debug] [MainThread]: Connection 'test.jaffle_shop.not_null_orders_credit_card_amount.d3ca593b59' was properly closed.
+[0m18:31:58.055556 [debug] [MainThread]: Connection 'test.jaffle_shop.not_null_orders_customer_id.c5f02694af' was properly closed.
+[0m18:31:58.055556 [debug] [MainThread]: Connection 'test.jaffle_shop.not_null_orders_gift_card_amount.413a0d2d7a' was properly closed.
+[0m18:31:58.056774 [debug] [MainThread]: Connection 'test.jaffle_shop.not_null_orders_order_id.cf6c17daed' was properly closed.
+[0m18:31:58.058151 [debug] [MainThread]: Connection 'test.jaffle_shop.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2' was properly closed.
+[0m18:31:58.058151 [debug] [MainThread]: Connection 'test.jaffle_shop.unique_orders_order_id.fed79b3a6e' was properly closed.
+[0m18:31:58.069390 [debug] [MainThread]: Command end result
+[0m18:31:58.584141 [debug] [MainThread]: Acquiring new snowflake connection 'generate_catalog'
+[0m18:31:58.592259 [info ] [MainThread]: Building catalog
+[0m18:31:58.594336 [debug] [ThreadPool]: Acquiring new snowflake connection 'dbt_hol_dev.information_schema'
+[0m18:31:58.613338 [debug] [ThreadPool]: Using snowflake connection "dbt_hol_dev.information_schema"
+[0m18:31:58.614550 [debug] [ThreadPool]: On dbt_hol_dev.information_schema: /* {"app": "dbt", "dbt_version": "1.7.10", "profile_name": "jaffle_shop", "target_name": "dev", "connection_name": "dbt_hol_dev.information_schema"} */
+with tables as (
+            select
+        table_catalog as "table_database",
+        table_schema as "table_schema",
+        table_name as "table_name",
+        coalesce(table_type, 'DYNAMIC TABLE') as "table_type",
+        comment as "table_comment",
+
+        -- note: this is the _role_ that owns the table
+        table_owner as "table_owner",
+
+        'Clustering Key' as "stats:clustering_key:label",
+        clustering_key as "stats:clustering_key:value",
+        'The key used to cluster this table' as "stats:clustering_key:description",
+        (clustering_key is not null) as "stats:clustering_key:include",
+
+        'Row Count' as "stats:row_count:label",
+        row_count as "stats:row_count:value",
+        'An approximate count of rows in this table' as "stats:row_count:description",
+        (row_count is not null) as "stats:row_count:include",
+
+        'Approximate Size' as "stats:bytes:label",
+        bytes as "stats:bytes:value",
+        'Approximate size of the table as reported by Snowflake' as "stats:bytes:description",
+        (bytes is not null) as "stats:bytes:include",
+
+        'Last Modified' as "stats:last_modified:label",
+        to_varchar(convert_timezone('UTC', last_altered), 'yyyy-mm-dd HH24:MI'||'UTC') as "stats:last_modified:value",
+        'The timestamp for last update/change' as "stats:last_modified:description",
+        (last_altered is not null and table_type='BASE TABLE') as "stats:last_modified:include"
+    from dbt_hol_dev.INFORMATION_SCHEMA.tables
+            where (
+                (
+                    upper("table_schema") = upper('public')
+                    and upper("table_name") = upper('raw_customers')
+                )
+             or 
+                (
+                    upper("table_schema") = upper('public')
+                    and upper("table_name") = upper('raw_payments')
+                )
+             or 
+                (
+                    upper("table_schema") = upper('public')
+                    and upper("table_name") = upper('raw_orders')
+                )
+             or 
+                (
+                    upper("table_schema") = upper('public')
+                    and upper("table_name") = upper('stg_customers')
+                )
+             or 
+                (
+                    upper("table_schema") = upper('public')
+                    and upper("table_name") = upper('customers')
+                )
+             or 
+                (
+                    upper("table_schema") = upper('public')
+                    and upper("table_name") = upper('stg_orders')
+                )
+             or 
+                (
+                    upper("table_schema") = upper('public')
+                    and upper("table_name") = upper('orders')
+                )
+             or 
+                (
+                    upper("table_schema") = upper('public')
+                    and upper("table_name") = upper('stg_payments')
+                )
+            )
+        ),
+        columns as (
+            select
+        table_catalog as "table_database",
+        table_schema as "table_schema",
+        table_name as "table_name",
+
+        column_name as "column_name",
+        ordinal_position as "column_index",
+        data_type as "column_type",
+        comment as "column_comment"
+    from dbt_hol_dev.INFORMATION_SCHEMA.columns
+            where (
+                (
+                    upper("table_schema") = upper('public')
+                    and upper("table_name") = upper('raw_customers')
+                )
+             or 
+                (
+                    upper("table_schema") = upper('public')
+                    and upper("table_name") = upper('raw_payments')
+                )
+             or 
+                (
+                    upper("table_schema") = upper('public')
+                    and upper("table_name") = upper('raw_orders')
+                )
+             or 
+                (
+                    upper("table_schema") = upper('public')
+                    and upper("table_name") = upper('stg_customers')
+                )
+             or 
+                (
+                    upper("table_schema") = upper('public')
+                    and upper("table_name") = upper('customers')
+                )
+             or 
+                (
+                    upper("table_schema") = upper('public')
+                    and upper("table_name") = upper('stg_orders')
+                )
+             or 
+                (
+                    upper("table_schema") = upper('public')
+                    and upper("table_name") = upper('orders')
+                )
+             or 
+                (
+                    upper("table_schema") = upper('public')
+                    and upper("table_name") = upper('stg_payments')
+                )
+            )
+        )
+        select *
+    from tables
+    join columns using ("table_database", "table_schema", "table_name")
+    order by "column_index"
+[0m18:31:58.614550 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:32:03.642190 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 5.0 seconds
+[0m18:32:03.642190 [debug] [ThreadPool]: On dbt_hol_dev.information_schema: Close
+[0m18:32:04.468349 [info ] [MainThread]: Catalog written to C:\Users\User\Desktop\cosmos-demo\cosmos-demo\dbt\jaffle_shop\target\catalog.json
+[0m18:32:04.503313 [debug] [MainThread]: Command `dbt docs generate` succeeded at 18:32:04.503313 after 14.59 seconds
+[0m18:32:04.506906 [debug] [MainThread]: Connection 'generate_catalog' was properly closed.
+[0m18:32:04.509008 [debug] [MainThread]: Connection 'dbt_hol_dev.information_schema' was properly closed.
+[0m18:32:04.511588 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C5D5CB79B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C5D476F0E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C5D4707C20>]}
+[0m18:32:04.513847 [debug] [MainThread]: Flushing usage events
+[0m18:32:28.177861 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014BD9ED8B30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014BD9ED9A90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014BD9ED8F50>]}
+
+
+============================== 18:32:28.179367 | 0f6d588b-38b7-402a-9f4b-0a1f7ed55a57 ==============================
+[0m18:32:28.179367 [info ] [MainThread]: Running with dbt=1.7.10
+[0m18:32:28.179367 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\User\\Desktop\\cosmos-demo\\cosmos-demo\\dbt\\jaffle_shop', 'debug': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\User\\Desktop\\cosmos-demo\\cosmos-demo\\dbt\\jaffle_shop\\logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt docs serve --port 8081', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m18:32:29.064265 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '0f6d588b-38b7-402a-9f4b-0a1f7ed55a57', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014BDA86E000>]}
+[0m18:32:29.157423 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '0f6d588b-38b7-402a-9f4b-0a1f7ed55a57', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014BDA952D20>]}
