@@ -9,7 +9,7 @@ dbt_profile_example = DbtDag(
     project_config=ProjectConfig(jaffle_shop_path),
     profile_config=ProfileConfig(
         # these map to dbt/jaffle_shop/profiles.yml
-        profile_name="airflow_db",
+        profile_name="snowflake_trial",
         target_name="dev",
         profiles_yml_filepath=jaffle_shop_path / "profiles.yml",
     ),

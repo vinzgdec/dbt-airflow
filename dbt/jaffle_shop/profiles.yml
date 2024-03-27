@@ -1,12 +1,15 @@
-airflow_db:
+snowflake_trial:
   target: dev
   outputs:
     dev:
-      type: postgres
-      host: postgres
-      user: postgres
-      password: postgres
-      port: 5432
-      dbname: postgres
-      schema: dbt
-      threads: 4
+      type: snowflake
+      account: jf67392.europe-west4.gcp
+      
+      user: dbt_user
+      password: dbt_password
+      
+      role: dbt_dev_role
+      database: dbt_hol_dev
+      warehouse: dbt_dev_wh
+      schema: public
+      threads: 200
