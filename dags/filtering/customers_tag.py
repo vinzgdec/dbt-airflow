@@ -2,12 +2,12 @@ from datetime import datetime
 
 from cosmos import DbtDag, ProjectConfig, RenderConfig
 
-from include.profiles import airflow_db
+from include.profiles import snowflake_trial
 from include.constants import jaffle_shop_path, venv_execution_config
 
 customers_tag = DbtDag(
     project_config=ProjectConfig(jaffle_shop_path),
-    profile_config=airflow_db,
+    profile_config=snowflake_trial,
     execution_config=venv_execution_config,
     # new render config
     render_config=RenderConfig(

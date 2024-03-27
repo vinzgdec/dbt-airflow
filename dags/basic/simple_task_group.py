@@ -6,7 +6,7 @@ from airflow.operators.empty import EmptyOperator
 
 from cosmos import DbtTaskGroup, ProjectConfig
 
-from include.profiles import airflow_db
+from include.profiles import snowflake_trial
 from include.constants import jaffle_shop_path, venv_execution_config
 
 
@@ -25,7 +25,7 @@ def simple_task_group() -> None:
     jaffle_shop = DbtTaskGroup(
         group_id="my_jaffle_shop_project",
         project_config=ProjectConfig(jaffle_shop_path),
-        profile_config=airflow_db,
+        profile_config=snowflake_trial,
         execution_config=venv_execution_config,
     )
 

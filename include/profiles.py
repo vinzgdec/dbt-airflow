@@ -1,14 +1,17 @@
 "Contains profile mappings used in the project"
 
 from cosmos import ProfileConfig
-from cosmos.profiles import PostgresUserPasswordProfileMapping
+from cosmos.profiles import SnowflakeUserPasswordProfileMapping
 
 
-airflow_db = ProfileConfig(
-    profile_name="airflow_db",
+snowflake_trial = ProfileConfig(
+    profile_name="snowflake_trial",
     target_name="dev",
-    profile_mapping=PostgresUserPasswordProfileMapping(
-        conn_id="airflow_metadata_db",
-        profile_args={"schema": "dbt"},
+    profile_mapping=SnowflakeUserPasswordProfileMapping(
+        conn_id="snowflake_trial",
+        profile_args={
+            "database": "dbt_hol_dev",
+            "schema": "public"
+      },
     ),
 )
